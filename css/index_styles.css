@@ -9,10 +9,10 @@
 /*Deals with font in the "business card" */
 @font-face {
     font-family: Copperplate-Gothic;
-    src: url("../fonts/copperplate-gothic-font.ttf");
+    src: url("fonts/copperplate-gothic-font.ttf");
 
     font-family: Garamond-Classico-SC;
-    src: url("../fonts/garamond-classico-sc.ttf");
+    src: url("fonts/garamond-classico-sc.ttf");
 }
 
 .card {
