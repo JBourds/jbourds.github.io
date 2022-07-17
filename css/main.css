@@ -7,8 +7,12 @@
 }
 
 @font-face {
-    font-family: Copperplate Gothic;
-    src: url("fonts\copperplate-gothix-font.ttf");
+    font-family: Copperplate-Gothic;
+    src: url("fonts/copperplate-gothix-font.ttf");
+
+    font-family: Garamond-Classico-SC;
+    src: url("fonts/Garamond-Classico-SC.ttf");
+
 }
 
 .bold {
