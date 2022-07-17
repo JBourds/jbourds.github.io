@@ -1,0 +1,38 @@
+:root{
+    --defaultMargins: 3em;
+    --defaultPadding: 1.5em;
+    --navyBackground: #020b50;
+    --greyBackground: #757890;
+    --topZIndex: 5;
+}
+
+@font-face {
+    font-family: Copperplate Gothic;
+    src: url("fonts\copperplate-gothix-font.ttf");
+}
+
+.bold {
+    font-weight: bold;
+}
+
+html {
+    margin: var(--defaultMargins);
+}
+
+nav {
+    display: center;
+    width: 100%;
+    background-color: var(--navyBackground);
+    text-align: center;
+    position: relative;
+    top: 0em;
+    z-index: var(--topZIndex);
+}
+
+nav a {
+    padding: 3%;
+    margin: 0% 3% 0% 3%;
+    color: white;
+    font-size: 2em;
+    display: inline-block;
+}
