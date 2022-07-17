@@ -53,8 +53,19 @@ header {
     border: .15em solid black;
     background-repeat: repeat;
     background-color: white;
-    font-family: "Garamond-Classico-SC";
-    font-size: 1.1em;
+}
+
+.card {
+    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1.2em;
+}
+
+.card h1 {
+    font-size: 1.5em;
 }
 
 header > div > p, header > div > a {
