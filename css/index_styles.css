@@ -6,6 +6,30 @@
     100% {transform: scale(1.4, 1.4)};
 }
 
+/*Deals with font in the "business card" */
+@font-face {
+    font-family: Copperplate-Gothic;
+    src: url("../fonts/copperplate-gothic-font.ttf");
+
+    font-family: Garamond-Classico-SC;
+    src: url("../fonts/garamond-classico-sc.ttf");
+}
+
+.card {
+    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
+    font-weight: bold;
+    color: black;
+}
+
+p.card, a.card {
+    font-size: 1.5em;
+}
+
+h1.card {
+    font-size: 2.5em;
+}
+/****************************************************/
+
 .arrow {
     border: solid var(--greyBackground);
     border-width: 0 1em 1em 0;
@@ -55,35 +79,8 @@ header {
     background-color: white;
 }
 
-.card {
-    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
-    font-weight: bold;
-}
-
-.card p {
-    font-size: 1.2em;
-}
-
-.card h1 {
-    font-size: 1.5em;
-}
-
-header > div > p, header > div > a {
-    font-size: 1.3em;
-}
-
-header > div> a {
-    color: black;
-}
-
 .toprow {
     line-height: 0em;
-}
-
-
-header h1, header h2, header h3, header p {
-    color: black;
-    font-family: copperplate-gothix-font
 }
 
 .middlerow {
@@ -192,27 +189,27 @@ section {
     background: var(--greyBackground);
 }
 
-h1, h2, h3 {
+#main h1, #main h2, #main h3 {
     color: white;
     text-shadow: .1em, .1em;
 }
 
-h1 {
+#main h1 {
     size: 1.75em;
     text-align: center;
 }
 
-h2 {
+#main h2 {
     size: 1.55em; 
     text-align: center;
 }
 
-h3 {
+#main h3 {
     size: 1.35em;
     text-align: center;
 }
 
-p {
+#main p {
     color: white;
     size: 1.15em;
 }

@@ -6,15 +6,6 @@
     --topZIndex: 5;
 }
 
-@font-face {
-    font-family: Copperplate-Gothic;
-    src: url("fonts/copperplate-gothic-font.ttf");
-
-    font-family: Garamond-Classico-SC;
-    src: url("fonts/Garamond-Classico-SC.ttf");
-
-}
-
 .bold {
     font-weight: bold;
 }
