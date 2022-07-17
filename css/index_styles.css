@@ -53,7 +53,8 @@ header {
     border: .15em solid black;
     background-repeat: repeat;
     background-color: white;
-    font-family: Garamond-Classico-SC;
+    font-family: "Garamond-Classico-SC";
+    font-size: 1.1em;
 }
 
 header > div > p, header > div > a {
