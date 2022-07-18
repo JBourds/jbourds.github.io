@@ -22,6 +22,7 @@ nav {
     position: relative;
     top: 0em;
     z-index: var(--topZIndex);
+    box-shadow: .1em .1em white;
 }
 
 nav a {
@@ -30,4 +31,8 @@ nav a {
     color: white;
     font-size: 2em;
     display: inline-block;
+}
+
+.shadow {
+    box-shadow: .1em .1em white; 
 }

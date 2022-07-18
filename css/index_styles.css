@@ -30,6 +30,10 @@ h1.card {
 }
 /****************************************************/
 
+nav {
+    margin-bottom: 8%;
+}
+
 .arrow {
     border: solid var(--greyBackground);
     border-width: 0 1em 1em 0;
