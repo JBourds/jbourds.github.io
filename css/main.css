@@ -1,9 +1,46 @@
 :root{
     --defaultMargins: 3em;
     --defaultPadding: 1.5em;
-    --navyBackground: #020b50;
-    --greyBackground: #757890;
+    --skyBlue: #328cc1;
+    --prussianBlue: #0b3c5d;
+    --goldLeaf: #d9b310;
+    --ivoryBlack: #1d2731
+    --darkGrey: rgb(25, 25, 25);
     --topZIndex: 5;
+}
+
+body {
+    background: var(--prussianBlue);
+}
+
+#main h1, #main h2, #main h3, nav a {
+    color: white;
+    text-shadow: .1em, .1em;
+}
+
+#main h1 {
+    size: 1.75em;
+    text-align: center;
+}
+
+#main h2 {
+    size: 1.55em; 
+    text-align: center;
+}
+
+#main h3 {
+    size: 1.35em;
+    text-align: center;
+}
+
+#main p {
+    color: white;
+    size: 1.15em;
+}
+
+section {
+    padding: var(--defaultPadding);
+    margin: var(--defaultMargins);
 }
 
 .bold {
@@ -17,12 +54,12 @@ html {
 nav {
     display: center;
     width: 100%;
-    background-color: var(--navyBackground);
     text-align: center;
     position: relative;
     top: 0em;
     z-index: var(--topZIndex);
     box-shadow: .1em .1em white;
+    margin-bottom: 8%;
 }
 
 nav a {
@@ -35,4 +72,12 @@ nav a {
 
 .shadow {
     box-shadow: .1em .1em white; 
+}
+
+nav, section {
+    border: .15em double white;
+}
+
+.arrow.down, .arrow.up {
+    margin: 5%;
 }

@@ -1,11 +1,3 @@
-@keyframes hoverEffect {
-    25% {transform: scale(1.1, 1.1); 
-        transform: rotate(30deg)};
-    50% {transform: scale(1.2), 1.2};
-    75% {transform: scale(1.3, 1.3)};
-    100% {transform: scale(1.4, 1.4)};
-}
-
 /*Deals with font in the "business card" */
 @font-face {
     font-family: Copperplate-Gothic;
@@ -18,7 +10,7 @@
 .card {
     font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
     font-weight: bold;
-    color: black;
+    color: var(--ivoryBlack);
 }
 
 p.card, a.card {
@@ -30,12 +22,8 @@ h1.card {
 }
 /****************************************************/
 
-nav {
-    margin-bottom: 8%;
-}
-
 .arrow {
-    border: solid var(--greyBackground);
+    border: solid var(--goldLeaf);
     border-width: 0 1em 1em 0;
     display: inline-block;
     padding: 1%;
@@ -51,21 +39,14 @@ nav {
     -webkit-transform: rotate(-135deg);
   }
 
-nav, p > .arrow {
-    background-color: var(--greyBackground);
-}
-
 /*Edit this to look better*/
 nav a:hover {
-    animation-name: hoverEffect;
-    animation-duration: 4s;
+    
+    transform: scale(1.15, 1.15);
     border: .1em solid white;
-    background-color: var(--greyBackground);
-    color: var(--navyBackground);
+    background-color: var(--skyBlue);
+    color: var(--goldLeaf);
     font-weight: bold;
-}
-body {
-    background-color: var(--navyBackground);
 }
 
 .paper-background {
@@ -78,8 +59,7 @@ body {
 header {
     margin: 15%;
     padding: 5%;
-    border: .15em solid black;
-    background-repeat: repeat;
+    border: 1em double black;
     background-color: white;
 }
 
@@ -124,7 +104,7 @@ header {
 }
 
 .bottomrow {
-    text-align: center;;
+    text-align: center;
 }
 
 .grid-layout {
@@ -132,8 +112,8 @@ header {
     align-content: center;
     grid-template-columns: 65% 35%;
     grid-template-areas:
-        "introduction cosmetic"
-        "aboutMe cosmetic";
+        "introduction img-section"
+        "aboutMe img-section";
     font-size: 1.3em;
 }
 
@@ -141,81 +121,46 @@ header {
     grid-area: introduction;
     position: relative;
     margin: var(--defaultMargins);
-    background-color: var(--greyBackground)
-}
-
-.cosmetic {
-    grid-area: cosmetic;
-    position: relative;
-    margin: 0em;
-    text-align: center;
-    /*! padding: 5%; */
-}
-
-.cosmetic img {
-    max-width: 100%;
-    width: 75%;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20%;
     
 }
 
-.cosmetic figcaption {
+.img-section {
+    grid-area: img-section;
+    position: relative;
+    text-align: center;
+    margin: 30% 10% 30% 10%;
+    
+}
+
+.img-section img {
+    max-width: 100%;
+    width: 75%;
+    margin-top: 30%;
+    height: auto;
+    border-radius: 5%;
+    border: .1em single var(--ivoryBlack);
+}
+
+.img-section figcaption {
     color: white;
     font-size: 1.2em;
-    margin: 5%;
+    margin: 10%;
     overflow-wrap:  break-word;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 10%;
 }
+
+.img-div {
+    width: 100%;
+    height: 100%;
+  }
 
 .aboutMe {
     grid-area: aboutMe;
     position: relative;
     margin: var(--defaultMargins);
-    background-color: var(--navyBackground);
 }
 
-section {
-    padding: var(--defaultPadding);
-    margin: var(--defaultMargins);
-}
 
-#circle {
-    width: 100%;
-    height: 90%;
-    background: var(--greyBackground);
-    border-radius: 50%
-  }
 
-.aboutMe {
-    background: var(--greyBackground);
-}
-
-#main h1, #main h2, #main h3 {
-    color: white;
-    text-shadow: .1em, .1em;
-}
-
-#main h1 {
-    size: 1.75em;
-    text-align: center;
-}
-
-#main h2 {
-    size: 1.55em; 
-    text-align: center;
-}
-
-#main h3 {
-    size: 1.35em;
-    text-align: center;
-}
-
-#main p {
-    color: white;
-    size: 1.15em;
-}
 
 
