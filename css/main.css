@@ -1,42 +1,67 @@
 :root{
-    --defaultMargins: 3em;
-    --defaultPadding: 1.5em;
+    --defaultMargins: 5%;
+    --defaultPadding: 5%;
     --skyBlue: #328cc1;
     --prussianBlue: #0b3c5d;
     --goldLeaf: #d9b310;
-    --ivoryBlack: #1d2731
+    --ivoryBlack: #1d2731;
     --darkGrey: rgb(25, 25, 25);
     --topZIndex: 5;
+}
+
+@font-face {
+    font-family: Copperplate-Gothic;
+    src: url("fonts/copperplate-gothic-font.ttf");
+
+    font-family: Garamond-Classico-SC;
+    src: url("fonts/garamond-classico-sc.ttf");
+}
+
+.title {
+    font-size: 2em;
+    color: white;
+}
+
+.arrow {
+    border: solid var(--goldLeaf);
+    border-width: 0 1em 1em 0;
+    display: inline-block;
+    padding: 1%;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.header {
+    text-align: center;
+    font-size: 1.55em;
+    padding: var(--defaultPadding);
+    margin: var(--defaultMargins);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.right {
+    float: right;
 }
 
 body {
     background: var(--prussianBlue);
 }
 
-#main h1, #main h2, #main h3, nav a {
-    color: white;
-    text-shadow: .1em, .1em;
-}
-
-#main h1 {
-    size: 1.75em;
-    text-align: center;
-}
-
-#main h2 {
-    size: 1.55em; 
-    text-align: center;
-}
-
-#main h3 {
-    size: 1.35em;
-    text-align: center;
-}
-
-#main p {
-    color: white;
-    size: 1.15em;
-}
 
 section {
     padding: var(--defaultPadding);
@@ -52,14 +77,13 @@ html {
 }
 
 nav {
-    display: center;
     width: 100%;
     text-align: center;
     position: relative;
     top: 0em;
     z-index: var(--topZIndex);
-    box-shadow: .1em .1em white;
     margin-bottom: 8%;
+    border: .15em solid white;
 }
 
 nav a {
@@ -70,14 +94,31 @@ nav a {
     display: inline-block;
 }
 
-.shadow {
-    box-shadow: .1em .1em white; 
-}
-
-nav, section {
-    border: .15em double white;
+nav a:hover {
+    transform: scale(1.15, 1.15);
+    border: .1em solid white;
+    background-color: var(--skyBlue);
+    color: var(--goldLeaf);
+    font-weight: bold;
 }
 
 .arrow.down, .arrow.up {
     margin: 5%;
+}
+
+.card {
+    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
+    font-weight: bold;
+    color: var(--ivoryBlack);
+}
+
+.paper-background {
+    background-image: url("../images/paper_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fonts {
+    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
 }

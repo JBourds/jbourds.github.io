@@ -1,0 +1,40 @@
+.grid-layout {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+      "socials socials image1"
+      "image2 direct-contact direct-contact";
+}
+
+.socials {
+  grid-area: socials;
+  position: relative;
+  background-color: var(--goldLeaf);
+  border: .5em double var(--ivoryBlack);
+}
+
+.image1 {
+  grid-area: image1;
+  position: relative;
+  background-color: white;
+  border-radius: 3em;
+  border: .5em solid var(--goldLeaf);
+}
+
+.direct-contact {
+  grid-area: direct-contact;
+  position: relative;
+  background-color: var(--goldLeaf);
+  border: .5em solid var(--ivoryBlack);
+}
+
+.image2 {
+  grid-area: image2;
+  position: relative;
+  background-color: white;
+  border-radius: 3em;
+  border: .5em solid var(--goldLeaf);
+}
+
+

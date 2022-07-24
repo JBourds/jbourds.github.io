@@ -1,0 +1,180 @@
+#main p, #main h4, #main h3, #main h2, #main h1, #main a {
+    color: var(--ivoryBlack);
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p, #main a {
+    font-size: 1.4em;
+}
+
+a:hover {
+    color: var(--goldLeaf);
+    font-weight: bold;
+}
+
+main {
+    color: black;
+    border: .25em solid black;
+    background-color: white;
+    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
+}
+
+.address {
+    display: inline;
+}
+
+section {
+    border: none;
+    margin: var(--defaultMargins);
+    margin-bottom: -2%;
+    padding: 0%;
+}
+
+
+.resume-background {
+    /*Change background image*/
+    background-image: url("../images/paper_background.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.grid-layout {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "resume-header"
+        "education"
+        "experience"
+        "relevant-coursework"
+        "projects";
+}
+
+.section-header {
+    grid-area: section-header;
+    position: relative;
+}
+
+.resume-header {
+    grid-area: resume-header;
+    position: relative;
+    
+}
+
+.line {
+    background-color: black;
+    padding: 0.1%;
+    margin: 1% 0% 1% 0%;
+}
+
+.education {
+    grid-area: education;
+    position: relative;
+}
+
+.experience {
+    grid-area: experience;
+    position: relative;
+
+    display: grid;
+    align-content: center;
+    grid-template-columns: 65% 35%;
+    grid-template-areas:
+        "section-header section-header"
+        "it-internship stc";
+    font-size: 1.3em;
+}
+
+.it-internship { 
+    grid-area: it-internship;
+    position: relative;
+}
+
+.stc { 
+    grid-area: stc;
+    position: relative;
+    text-align: center;
+}
+
+.stc img {
+    margin-top: 20%;
+    margin-bottom: var(--defaultMargins);
+    width: 50%;
+    max-width: 100%;
+}
+
+figcaption {
+   text-align: center;
+}
+
+.relevant-coursework{
+    grid-area: relevant-coursework;
+    position: relative;
+    
+
+    display: grid;
+    align-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "section-header section-header"
+        "cs-classes non-cs-classes";
+    font-size: 1.3em;
+}
+
+.cs-classes { 
+    grid-area: cs-classes;
+    position: relative;
+    
+}
+
+.non-cs-classes { 
+    grid-area: non-cs-classes;
+    position: relative;
+    
+}
+
+.projects {
+    grid-area: projects;
+    position: relative;
+    
+
+    display: grid;
+    align-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "section-header section-header"
+        "data-science software-engineering"
+        "websites websites";
+    font-size: 1.3em;
+}
+
+.data-science { 
+    grid-area: data-science;
+    position: relative;
+    
+}
+
+.software-engineering { 
+    grid-area: software-engineering;
+    position: relative;
+    
+}
+
+.websites { 
+    grid-area: websites;
+    position: relative;
+    margin-bottom: var(--defaultMargins);
+}

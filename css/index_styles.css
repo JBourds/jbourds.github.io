@@ -1,18 +1,3 @@
-/*Deals with font in the "business card" */
-@font-face {
-    font-family: Copperplate-Gothic;
-    src: url("fonts/copperplate-gothic-font.ttf");
-
-    font-family: Garamond-Classico-SC;
-    src: url("fonts/garamond-classico-sc.ttf");
-}
-
-.card {
-    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
-    font-weight: bold;
-    color: var(--ivoryBlack);
-}
-
 p.card, a.card {
     font-size: 1.5em;
 }
@@ -20,41 +5,21 @@ p.card, a.card {
 h1.card {
     font-size: 2.5em;
 }
+
+#main h1, #main h2, #main h3, nav a {
+    text-shadow: .1em, .1em;
+}
+
+#main h1 {
+    size: 1.75em;
+    text-align: center;
+}
+
+#main p {
+    size: 1.15em;
+}
+
 /****************************************************/
-
-.arrow {
-    border: solid var(--goldLeaf);
-    border-width: 0 1em 1em 0;
-    display: inline-block;
-    padding: 1%;
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
-
-/*Edit this to look better*/
-nav a:hover {
-    
-    transform: scale(1.15, 1.15);
-    border: .1em solid white;
-    background-color: var(--skyBlue);
-    color: var(--goldLeaf);
-    font-weight: bold;
-}
-
-.paper-background {
-    background-image: url("../images/paper_background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 header {
     margin: 15%;
@@ -107,12 +72,47 @@ header {
     text-align: center;
 }
 
+#main h2 {
+    size: 1.55em; 
+    text-align: center;
+}
+
+#main h3 {
+    size: 1.35em;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border: .35em solid var(--ivoryBlack);
+}
+
+main {
+    color: var(--ivoryBlack);
+}
+
+li {
+    margin: 5%;
+}
+
+.section-list li a {
+    color: var(--ivoryBlack);
+    font-size: 1.35em;
+    padding: 3%;
+}
+
+.section-list li a:hover {
+    color: var(--goldLeaf);
+    background-color: var(--prussianBlue);
+    border: .15em solid black;
+}
+
 .grid-layout {
     display: grid;
     align-content: center;
     grid-template-columns: 65% 35%;
     grid-template-areas:
-        "introduction img-section"
+        "introduction introduction"
         "aboutMe img-section";
     font-size: 1.3em;
 }
@@ -120,25 +120,21 @@ header {
 .introduction {
     grid-area: introduction;
     position: relative;
-    margin: var(--defaultMargins);
-    
 }
 
 .img-section {
     grid-area: img-section;
     position: relative;
     text-align: center;
-    margin: 30% 10% 30% 10%;
-    
+    background-color: var(--goldLeaf);
 }
 
 .img-section img {
     max-width: 100%;
     width: 75%;
     margin-top: 30%;
-    height: auto;
     border-radius: 5%;
-    border: .1em single var(--ivoryBlack);
+    border: .15em solid black;
 }
 
 .img-section figcaption {
@@ -152,12 +148,15 @@ header {
 .img-div {
     width: 100%;
     height: 100%;
-  }
+}
 
 .aboutMe {
     grid-area: aboutMe;
     position: relative;
-    margin: var(--defaultMargins);
+}
+
+section {
+    line-height: 1.5em; 
 }
 
 
