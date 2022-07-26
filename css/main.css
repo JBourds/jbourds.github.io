@@ -54,8 +54,16 @@
     display: inline;
 }
 
+.block {
+    display: block;
+}
+
 .right {
     float: right;
+}
+
+.center {
+    text-align: center;
 }
 
 body {

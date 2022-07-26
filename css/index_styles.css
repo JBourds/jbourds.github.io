@@ -84,7 +84,7 @@ header {
 
 section {
     background-color: white;
-    border: .35em solid var(--ivoryBlack);
+    border: .5em double var(--ivoryBlack);
 }
 
 main {
@@ -95,13 +95,13 @@ li {
     margin: 5%;
 }
 
-.section-list li a {
+.section-list li a, a.aboutMe {
     color: var(--ivoryBlack);
     font-size: 1.35em;
     padding: 3%;
 }
 
-.section-list li a:hover {
+.section-list li a:hover, a.aboutMe:hover {
     color: var(--goldLeaf);
     background-color: var(--prussianBlue);
     border: .15em solid black;

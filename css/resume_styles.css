@@ -15,7 +15,7 @@ h3 {
     font-size: 1.6em;
 }
 
-p, #main a {
+p, #main a, li {
     font-size: 1.4em;
 }
 
@@ -29,6 +29,7 @@ main {
     border: .25em solid black;
     background-color: white;
     font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
+    border: .5em double var(--ivoryBlack);
 }
 
 .address {
