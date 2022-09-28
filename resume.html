@@ -26,7 +26,7 @@
         <nav id="nav" class="nav">
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact Me</a>
+            <!-- <a href="contact.html">Contact Me</a> -->
         </nav>
 
         <main id="main" class="main grid-layout resume-background card">
@@ -39,31 +39,31 @@
             <a href="contact.html" class="contact-me inline">Contact Me</a></section>
 
             <section id="education" class="education">
-                <div class="section-header">
+                <section class="section-header">
                     <h2 class="bold section-header">Education<p></p>
                     <div class="line"></div>
-                </h2></div>
+                </h2></section>
                     
-                <div class="university">
+                <section class="university">
                     <p class="university inline-block">University of Vermont (UVM), Burlington VT</p>
                     <p class="college-graduation right">Anticipated Graduation May 2025</p>
                     <p class="major">Pursuing double majors in Computer and Data Science</p>
-                </div>
-                <div class="high-school">
+                </section>
+                <section class="high-school">
                     <p class="high-school inline-block">Missisquoi Valley Union High School (MVU), Swanton VT</p>
                     <p class="high-school-graduation right">Graduated June 2021</p>
                     <p class="high-school-honors">Honors: Valedictorian, Green and Gold Scholar, Presidential Education Award, Pro Merito, U.S. Army Scholar/Athlete Award</p>
                     <p class="high-school-gpa">4.3 GPA</p>
                     <p class="sat-score">1450 SAT Score</p>
-                </div>
+                </section>
                 
             </section>
 
             <section id="experience" class="experience">
-                <div class="section-header">
+                <section class="section-header">
                     <h2 class="bold">Past Work Experience</h2>
                     <div class="line"></div>
-                </div>
+                </section>
                 <section class="it-internship">
                     <h3>IT Internship: Summer 2021 - Present</h3>
                     <p>Interned with the IT department of an area 
@@ -101,10 +101,10 @@ programs.
             </section>
 
             <section id="relevant-coursework" class="relevant-coursework">
-                <div class="section-header">
+                <section class="section-header">
                     <h2 class="bold">Relevant Coursework</h2>
                     <div class="line"></div>
-                </div>
+                </section>
                 <section class="cs-classes">
                     <h3>Computer Science Classes</h3>
                     <p>Taken:</p>
@@ -130,22 +130,22 @@ programs.
             </section>
 
             <section id="projects" class="projects">
-                <div class="section-header">
+                <section class="section-header">
                     <h2 class="bold section-header">Projects</h2>
                     <div class="line"></div>
-                </div>
+                </section>
+
                 <section class="machine-learning data-science">
                     <h2>Machine Learning / Data Science</h2>
                     <ul>
                         <li>None for now, check back in later!</li>
-    
                     </ul>
                 </section>
     
-                <section class="software-engineering">
+                <section class="software-engineering programming">
     
-                    <h2>Software Engineering</h2>
-    
+                    <h2>Software Engineering / Projects</h2>
+                    
                     <h3>Java</h3>
                     <ul>
                         <li>
@@ -153,14 +153,28 @@ programs.
                             <p>***In Progress</p>
                         </li>
                     </ul>
+
+                    <h3>Python</h3>
+                    <ul>
+                        <li>
+                            <h4>Plagiarism Detector</h4>
+                            <p>This program was the final project for UVM's introductory programming course (CS021).
+                                It works by taking a wikipedia link for a topic and the file's name to check then it will go line by line through the file
+                                breaking up the words into lists which it then compares the sequence of to the wikipedia page entered.
+                                Then, it will follow the links in the references section of the wikipedia page to a user-defined depth and repeat
+                                the same process on those pages as well.
+                            </p>
+                            <p>Note: This was a project made very early on in my education, take it with a grain of salt :)</p>
+                            <a href="https://github.com/JBourds/CS021-Final-Project">Github Repo</a>
+                        </li>
+                    </ul>
     
                 </section>
     
-                <section class="websites web-Apps">
+                <section class="websites">
                     <h2>Websites</h2>
     
                     <ul>
-                        
                         <li>
                             <h3>This One!</h3>
                             <p>This website is created from scratch to serve as a portfolio and virtual resume.</p>
@@ -168,7 +182,7 @@ programs.
     
                         <li>
                             <h3>Web Development Final Project</h3>
-                            <a href="" src="https://jbourde2.w3.uvm.edu/cs008/final/index.php">Chess.edu Website</a>
+                            <a href="https://jbourde2.w3.uvm.edu/cs008/final/index.php">Chess.edu Website</a>
                             <p>This website was created for a final project in an intro to website development class.
                                 It covered use of HTML, CSS, PHP, SQL, and some Javascript code to create a fully functional
                                 website which interacts with a database and utilizes many of the built-in HTML functions such
