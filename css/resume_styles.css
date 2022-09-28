@@ -12,11 +12,27 @@ h2 {
 }
 
 h3 {
+    font-size: 1.7em;
+}
+
+h4 {
     font-size: 1.6em;
 }
 
-p, #main a, li {
-    font-size: 1.4em;
+h1, h2, h3, h4 {
+    font-family: "Garamond-Classico-SC", "Sans-Serif";
+}
+
+p, a {
+    font-size: 1.6em;
+}
+
+ol, ul {
+    font-size: 1.1em;
+}
+
+ul li {
+    font-size: 1.35em;
 }
 
 a:hover {
@@ -28,7 +44,7 @@ main {
     color: black;
     border: .25em solid black;
     background-color: white;
-    font-family: "Garamond-Classico-SC", "Copperplate-Gothic", "Sans-Serif";
+    font-family: "Copperplate-Gothic", "Sans-Serif";
     border: .5em double var(--ivoryBlack);
 }
 
@@ -38,7 +54,6 @@ main {
 
 section {
     border: none;
-    margin: var(--defaultMargins);
     margin-bottom: -2%;
     padding: 0%;
 }
@@ -57,7 +72,7 @@ section {
     align-content: center;
     grid-template-columns: 100%;
     grid-template-areas:
-        "resume-header"
+        "section-header"
         "education"
         "experience"
         "relevant-coursework"
@@ -67,12 +82,6 @@ section {
 .section-header {
     grid-area: section-header;
     position: relative;
-}
-
-.resume-header {
-    grid-area: resume-header;
-    position: relative;
-    
 }
 
 .line {
@@ -86,7 +95,7 @@ section {
     position: relative;
 }
 
-.experience {
+experience {
     grid-area: experience;
     position: relative;
 
@@ -95,7 +104,7 @@ section {
     grid-template-columns: 65% 35%;
     grid-template-areas:
         "section-header section-header"
-        "it-internship stc";
+        "it-internship it-internship";
     font-size: 1.3em;
 }
 
@@ -104,78 +113,35 @@ section {
     position: relative;
 }
 
-.stc { 
-    grid-area: stc;
-    position: relative;
-    text-align: center;
-}
-
-.stc img {
-    margin-top: 20%;
-    margin-bottom: var(--defaultMargins);
-    width: 50%;
-    max-width: 100%;
-}
-
-figcaption {
-   text-align: center;
-}
-
 .relevant-coursework{
     grid-area: relevant-coursework;
     position: relative;
-    
-
     display: grid;
     align-content: center;
     grid-template-columns: 50% 50%;
     grid-template-areas:
         "section-header section-header"
-        "cs-classes non-cs-classes";
-    font-size: 1.3em;
+        "classes classes";
 }
 
-.cs-classes { 
-    grid-area: cs-classes;
+.classes { 
+    grid-area: classes;
     position: relative;
-    
-}
-
-.non-cs-classes { 
-    grid-area: non-cs-classes;
-    position: relative;
-    
 }
 
 .projects {
     grid-area: projects;
     position: relative;
-    
-
     display: grid;
     align-content: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-areas:
-        "section-header section-header"
-        "data-science software-engineering"
-        "websites websites";
-    font-size: 1.3em;
+        "section-header"
+        "projects";
 }
 
-.data-science { 
-    grid-area: data-science;
+.projects { 
+    grid-area: projects;
     position: relative;
-    
-}
-
-.software-engineering { 
-    grid-area: software-engineering;
-    position: relative;
-    
-}
-
-.websites { 
-    grid-area: websites;
-    position: relative;
-    margin-bottom: var(--defaultMargins);
+    margin-bottom: 2%;
 }
