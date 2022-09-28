@@ -27,11 +27,7 @@ p, a {
     font-size: 1.6em;
 }
 
-ol, ul {
-    font-size: 1.1em;
-}
-
-ul li {
+.classes ul {
     font-size: 1.35em;
 }
 
