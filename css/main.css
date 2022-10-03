@@ -46,6 +46,10 @@
     margin: var(--defaultMargins);
 }
 
+.icon {
+    border-radius: 25%;
+}
+
 .universal-header-text {
     text-align: center;
     font-size: 1.75em;

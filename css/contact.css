@@ -4,8 +4,8 @@
   grid-template-columns: 33% 33% 33%;
   grid-template-areas:
       "form form socials"
-      "form form image1"
-      "form form image1"
+      "form form socials"
+      "form form socials"
       "form form direct-contact";
 }
 
@@ -102,7 +102,7 @@ label {
   grid-area: direct-contact;
   position: relative;
   background-color: var(--goldLeaf);
-  border: .5em solid var(--ivoryBlack);
+  border: .5em double var(--ivoryBlack);
 }
 
 

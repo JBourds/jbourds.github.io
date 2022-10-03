@@ -375,39 +375,9 @@ function getData($field)
 
     </section>
 
-    <section class="socials">
-        <h2>Follow me on Social Media!</h2>
-        <a href="" class="center social-link">LinkedIn</a>
-        <figure>
-            <img src="">
-        </figure>
-        <a href="https://joinhandshake.com/employers/" class="center social-link">Handshake: jbourde2@uvm.edu</a>
-        <figure>
-            <img src="">
-        </figure>
-        <a href="https://www.instagram.com/jordan_bourdeau/?hl=en" class="center social-link">Instagram</a>
-        <figure>
-            <img src="">
-        </figure>
-        <a href="https://www.facebook.com/jordan.bourdeau.5" class="center social-link">Facebook</a>
-        <figure>
-            <img src="">
-        </figure>
-    </section>
-
-    <section class="image1">
-        <figure>
-            <img>
-            <figcaption></figcaption>
-        </figure>
-    </section>
-
-    <section class="direct-contact">
-        <h2>Contact me Directly</h2>
-        <h3>Email</h3>
-        <a href="mailto:jordanbourdeau03@outlook.com" class="contact-link">jordanbourdeau03@outlook.com</a>
-        <h3>Cell Phone</h3>
-        <a href="tel:+1(802)7823288" class="contact-link">802-782-3288</a>
-    </section>
+    <?php
+    include 'socials.php';
+    include 'direct-contact.php';
+    ?>    
 
 </main>
