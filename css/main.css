@@ -46,6 +46,14 @@
     margin: var(--defaultMargins);
 }
 
+.universal-header-text {
+    text-align: center;
+    font-size: 1.75em;
+    color: white;
+    padding: var(--defaultPadding);
+    margin: var(--defaultMargins);
+}
+
 .inline-block {
     display: inline-block;
 }
