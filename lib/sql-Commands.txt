@@ -1,0 +1,31 @@
+Creating the resume site database:
+    CREATE DATABASE RESUME_SITE;
+
+Creating the contact table:
+
+    CREATE TABLE `JBOURDE2_labs`.`tblContactForm`(
+    `pmkFormID` INT NOT NULL AUTO_INCREMENT,
+    `fldName` VARCHAR(50) NOT NULL,
+    `fldCompany` VARCHAR(50) NOT NULL,
+    `fldEmail` VARCHAR(50) NOT NULL,
+    `fldPrimaryPhoneType` VARCHAR(4) NOT NULL,
+    `fldPrimaryPhoneNumber` VARCHAR(20) NOT NULL,
+    `fldSecondaryPhoneType` VARCHAR(4) NOT NULL,
+    `fldSecondaryPhoneNumber` VARCHAR(20) NOT NULL,
+    `fldInquiryType` VARCHAR(25) NOT NULL,
+    `fldInquiryDetails` VARCHAR(1000) NOT NULL,
+    `fldAdditionalComments` VARCHAR(1000) NOT NULL,
+    PRIMARY KEY(`pmkFormID`)
+) ENGINE = InnoDB;
+
+
+Creating the userAccounts table:
+
+    CREATE TABLE `JBOURDE2_labs`.`tblUserAccounts`(
+        `pmkUserID` INT NOT NULL AUTO_INCREMENT,
+        `fldUsername` VARCHAR(40) NOT NULL,
+        `fldPassword` VARCHAR(300) NOT NULL,
+        `fldUserType` INT(20) NOT NULL,
+        PRIMARY KEY(`pmkUserID`)
+    ) ENGINE = InnoDB;
+
