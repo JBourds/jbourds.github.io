@@ -4,9 +4,8 @@
   grid-template-columns: 33% 33% 33%;
   grid-template-areas:
       "form form socials"
-      "form form socials"
-      "form form socials"
-      "form form direct-contact";
+      "form form direct-contact"
+      
 }
 
 .form {
