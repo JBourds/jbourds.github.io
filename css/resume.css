@@ -69,8 +69,10 @@ section {
     grid-template-columns: 100%;
     grid-template-areas:
         "section-header"
+        "objective"
         "education"
         "experience"
+        "skills"
         "relevant-coursework"
         "projects";
 }
@@ -88,6 +90,16 @@ section {
 
 .education {
     grid-area: education;
+    position: relative;
+}
+
+.objective {
+    grid-area: objective;
+    position: relative;
+}
+
+.skills {
+    grid-area: skills;
     position: relative;
 }
 
