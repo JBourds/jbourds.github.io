@@ -21,7 +21,7 @@
         </div>
 
         <div class="bottomrow">
-            <a href="contact.html" class="right-side card">Contact:
+            <a href="contact.php" class="right-side card">Contact:
                 <span class="bold">Phone Email Social Media</span>
             </a>
         </div>

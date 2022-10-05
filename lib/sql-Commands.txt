@@ -3,7 +3,7 @@ Creating the resume site database:
 
 Creating the contact table:
 
-    CREATE TABLE `JBOURDE2_labs`.`tblContactForm`(
+    CREATE TABLE `JBOURDE2_resume`.`tblResumeContactForm`(
     `pmkFormID` INT NOT NULL AUTO_INCREMENT,
     `fldName` VARCHAR(50) NOT NULL,
     `fldCompany` VARCHAR(50) NOT NULL,
@@ -21,11 +21,24 @@ Creating the contact table:
 
 Creating the userAccounts table:
 
-    CREATE TABLE `JBOURDE2_labs`.`tblUserAccounts`(
-        `pmkUserID` INT NOT NULL AUTO_INCREMENT,
-        `fldUsername` VARCHAR(40) NOT NULL,
-        `fldPassword` VARCHAR(300) NOT NULL,
-        `fldUserType` INT(20) NOT NULL,
-        PRIMARY KEY(`pmkUserID`)
-    ) ENGINE = InnoDB;
+    CREATE TABLE `JBOURDE2_resume`.`tblResumeUserAccount`(
+    `pmkUserID` INT NOT NULL AUTO_INCREMENT,
+    `fldUsername` VARCHAR(40) NOT NULL,
+    `fldPassword` VARCHAR(250) NOT NULL,
+    PRIMARY KEY(`pmkUserID`)
+) ENGINE = InnoDB;
 
+Creating the userInfo table:
+
+    CREATE TABLE `JBOURDE2_resume`.`tblResumeUserInfo`(
+    `pmkUserID` INT NOT NULL AUTO_INCREMENT,
+    `fldName` VARCHAR(50) NOT NULL,
+    `fldEmail` VARCHAR(75) NOT NULL,
+    `fldPhoneNumber` VARCHAR(25) NOT NULL,
+    `fldPermissions` VARCHAR(15) NOT NULL,
+    PRIMARY KEY(`pmkRowID`)
+) ENGINE = InnoDB;
+
+    ALTER TABLE
+    `tblResumeUserInfo` ADD CONSTRAINT `FOREIGN KEY` FOREIGN KEY(`pmkUserID`) REFERENCES `tblResumeUserAccount`(`pmkUserID`) 
+    ON DELETE CASCADE ON UPDATE CASCADE;

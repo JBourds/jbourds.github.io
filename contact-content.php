@@ -1,4 +1,5 @@
 <?php
+include 'lib/helperFunctions.php';
 if (DEBUG) {
     print '<!-- Loading contact content -->' . PHP_EOL;
 }
@@ -31,7 +32,7 @@ if ($validUser) {
 
     if ($pmkFormID > 0) {
         $sql = 'SELECT fldName, fldCompany, fldEmail, fldPrimaryPhoneType, fldPrimaryPhoneNumber, fldSecondaryPhoneType, fldSecondaryPhoneNumber, fldInquiryType, fldInquiryDetails, fldAdditionalComments ';
-        $sql .= 'FROM ' . CONTACT_FORM . ' ';
+        $sql .= 'FROM ' . CONTACT_TABLE . ' ';
         $sql .= 'WHERE pmkFormID = ?';
 
         $records = $dataBase->select($sql, array($pmkFormID));
@@ -67,21 +68,7 @@ if (DEBUG) {
     print '<p>' . $additionalComments . '<p>';
 }
 
-function verifyAlphaNum($testString)
-{
-    return (preg_match("/^([[:alnum:]]|-|\.| |\'|&|;|#)+$/", $testString));
-}
 
-function getData($field)
-{
-    if (!isset($_POST[$field])) {
-        $data = "";
-    } else {
-        $data = trim($_POST[$field]);
-        $data = htmlspecialchars($data);
-    }
-    return $data;
-}
 
 ?>
 
@@ -196,7 +183,7 @@ function getData($field)
 
                 if ($dataIsGood) {
                     try {
-                        $sql = 'INSERT INTO ' . CONTACT_FORM . ' SET 
+                        $sql = 'INSERT INTO ' . CONTACT_TABLE . ' SET 
                             pmkFormID = ?,
                             fldName = ?,
                             fldCompany = ?,

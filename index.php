@@ -17,16 +17,16 @@ include 'top.php';
         <h2 class="bold">What are you interested in?</h2>
         <ul class="section-list">
             <li>
-                <a href="resume.html#education">Education</a>
+                <a href="resume.php#education">Education</a>
             </li>
             <li>
-                <a href="resume.html#experience">Experience</a>
+                <a href="resume.php#experience">Experience</a>
             </li>
             <li>
-                <a href="resume.html#relevant-coursework">Relevant Coursework</a>
+                <a href="resume.php#relevant-coursework">Relevant Coursework</a>
             </li>
             <li>
-                <a href="resume.html#projects">Projects</a>
+                <a href="resume.php#projects">Projects</a>
             </li>
         </ul>
 

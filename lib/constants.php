@@ -14,9 +14,11 @@ define('BASE_PATH', DOMAIN . PATH_PARTS['dirname'] . '/');
 
 define ('LIB_PATH', 'lib/');
 
-define ('DATABASE_NAME', 'JBOURDE2_labs');
+define ('DATABASE_NAME', 'JBOURDE2_resume');
 
-define ('CONTACT_FORM', 'tblContactForm');
+define ('CONTACT_TABLE', 'tblResumeContactForm');
+define ('ACCOUNTS_TABLE', 'tblResumeUserAccount');
+define ('INFO_TABLE', 'tblResumeUserInfo');
 
 if (str_contains(BASE_PATH, 'live')) {
     define ('SITE_STATUS', 'live/');
@@ -37,7 +39,9 @@ if(DEBUG) {
     print '<p>' . 'BASE_PATH: ' . BASE_PATH . '</p>';
     print '<p>' . 'LIB_PATH: ' . LIB_PATH . '</p>';
     print '<p>' . 'DATABASE_NAME: ' . DATABASE_NAME . '</p>';
-    print '<p>' . 'CONTACT_FORM: ' . CONTACT_FORM . '</p>';
+    print '<p>' . 'CONTACT_TABLE: ' . CONTACT_TABLE . '</p>';
+    print '<p>' . 'ACCOUNTS_TABLE: ' . ACCOUNTS_TABLE . '</p>';
+    print '<p>' . 'INFO_TABLE: ' . INFO_TABLE . '</p>';
     print '<p>' . 'SITE_STATUS: ' . SITE_STATUS . '</p>';
 }
 ?>
