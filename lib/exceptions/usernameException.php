@@ -1,14 +1,8 @@
 <?php
-
-const THROW_NONE = 0;
-    const THROW_DUPLICATE_USERNAME = 1;
-    const THROW_ALPHA_NUM = 2;
-    const THROW_SIZE = 3;
+include '../constants.php';
 
 class usernameException extends Exception {
-
     
-
     public function __construct($throwCode) {
         $message = null;
         switch($throwCode) {

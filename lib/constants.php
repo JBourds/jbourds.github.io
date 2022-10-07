@@ -20,6 +20,14 @@ define ('CONTACT_TABLE', 'tblResumeContactForm');
 define ('ACCOUNTS_TABLE', 'tblResumeUserAccount');
 define ('INFO_TABLE', 'tblResumeUserInfo');
 
+define ('THROW_NONE', 0);
+define('THROW_DUPLICATE_USERNAME', 1);
+define('THROW_ALPHA_NUM', 2);
+define('THROW_SIZE', 3);
+define('ACCOUNT_NOT_CREATED', 4);
+define('INFO_NOT_CREATED', 5);
+
+
 if (str_contains(BASE_PATH, 'live')) {
     define ('SITE_STATUS', 'live/');
 }

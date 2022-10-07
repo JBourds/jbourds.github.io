@@ -2,11 +2,12 @@
 /**
  * This class represents a user account in the database and contains all methods pertaining to a user
  */
-include 'constants.php';
+require_once('constants.php');
 include 'DataBase.php';
 include 'helperFunctions.php';
 include 'exceptions/usernameException.php';
 include 'exceptions/passwordException.php';
+include 'exceptions/userCreationException.php';
 
 const USER_DEBUG = false;
 
@@ -15,6 +16,7 @@ class User {
     public function __construct($username, $password, $name, $email, $phoneNumber) {
         $this->username = $username;
         $this->password = $password;
+        $this->hashedPassword = password_hash($password, PASSWORD_ARGON2ID); 
         $this->name = $name;
         $this->email = $email;
         $this->phoneNumber = $phoneNumber;
@@ -49,7 +51,7 @@ class User {
     private function verifyUsername() {
 
         if ($this->verifyNonDuplicateUsername()
-            && verifyAlphaNum($this->username) 
+            && verifyLoginField($this->username) 
             && strlen($this->username) >= 8) {
             return true;
         } elseif (!$this->verifyNonDuplicateUsername()) {
@@ -82,7 +84,7 @@ class User {
     }
 
     private function verifyPassword() {
-        verifyAlphaNum($this->password) ? $alphaNumeric = true : $alphaNumeric = false;
+        verifyLoginField($this->password) ? $alphaNumeric = true : $alphaNumeric = false;
         strlen($this->password) >= 10 ? $correctSize = true : $correctSize = false;
 
         if ($alphaNumeric && $correctSize) {
@@ -97,10 +99,12 @@ class User {
     // Creates user
     private function createUser() {
         $success = false;
-        $createAccount = $this->createUserAccount($this->userID, $this->username, $this->password);
+        $createAccount = $this->createUserAccount();
         $this->userID = $this->database->getLastID();
-        $createUserInfo = $this->createUserInfo($this->userID, $this->name, $this->email, $this->phoneNumber, $this->permissions);
-        ($createAccount == 1 && $createUserInfo == 1) ? $success = true : $success = false;
+        $createUserInfo = $this->createUserInfo();
+        ($createAccount) ? $createAccount = true : throw new userCreationException(ACCOUNT_NOT_CREATED);
+        ($createUserInfo) ? $createUserInfo = true : throw new userCreationException(INFO_NOT_CREATED);
+        ($createAccount && $createUserInfo) ? $success = true : $success = false;
         return $success;
     }
 
@@ -113,7 +117,7 @@ class User {
         ON DUPLICATE KEY UPDATE
         fldUsername = ?,
         fldPassword = ?';
-        $params = array($this->userID, $this->username, $this->password, $this->username, $this->password);
+        $params = array($this->userID, $this->username, $this->hashedPassword, $this->username, $this->hashedPassword);
         return $this->database->insert($sql, $params);
     }
 

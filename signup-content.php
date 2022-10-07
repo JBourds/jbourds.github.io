@@ -32,25 +32,26 @@ if (DEBUG) {
                     if (DEBUG) {
                         print '<!-- Data loaded from form -->' . PHP_EOL;
                     }
-
-                    
-                    if ($password == "") {
-                        print '<p class="mistake">Must enter password</p>';
+                    if ($username == "") {
+                        print '<p class="mistake">Must enter username</p>';
                         $dataIsGood = false;
-                    } elseif (!verifyAlphaNum($password)) {
-                        print '<p class="mistake">Password contains invalid characters</p>' . PHP_EOL;
+                    } elseif (!verifyLoginField($username)) {
+                        print '<p class="mistake">Username contains invalid characters</p>' . PHP_EOL;
                         $dataIsGood = false;
                     }
                     if ($password != $confirmPassword) {
                         print '<p class="mistake">Passwords must match</p>';
                         $dataIsGood = false;
-                    } elseif ($confirmPassword == "") {
-                        print '<p class="mistake">Must confirm password</p>';
-                        $dataIsGood = false;
-                    } elseif (!verifyAlphaNum($confirmPassword)) {
-                        print '<p class="mistake">Second password contains invalid characters</p>' . PHP_EOL;
-                        $dataIsGood = false;
+                    } else {
+                        if ($password == "") {
+                            print '<p class="mistake">Must enter password</p>';
+                            $dataIsGood = false;
+                        } elseif (!verifyLoginField($password)) {
+                            print '<p class="mistake">Password contains invalid characters</p>' . PHP_EOL;
+                            $dataIsGood = false;
+                        }
                     }
+                    
                     if ($name == "") {
                         print '<p class="mistake">Must enter name</p>' . PHP_EOL;
                         $dataIsGood = false;
