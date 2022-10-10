@@ -36,6 +36,10 @@ class Login {
         return false;
     }
 
+    public function populateAccountInfo() {
+        
+    }
+
     public function getSuccess() {
         return $this->success;
     }

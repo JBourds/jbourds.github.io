@@ -143,11 +143,21 @@ class User {
         $this->createUserInfo($this->userID, $this->name, $this->email, $this->phoneNumber, $this->permissions);
     }
 
-    public function changeUsername($username) {
+    public function userExists($username) {
+        $sql = 'SELECT * FROM ' . ACCOUNTS_TABLE . ' WHERE
+            fldUsername = ?';
+        $records = $this->database->select($sql, array($this->username));
+        if (!empty($records)) {
+            return true;
+        }
+        return false;
+    }
+
+    private function changeUsername($username) {
 
     }
 
-    public function changePassword($password) {
+    private function changePassword($password) {
 
     }
 
