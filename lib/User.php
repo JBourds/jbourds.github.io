@@ -161,6 +161,16 @@ class User {
 
     }
 
+    public function populateUserFields() {
+        $sql = 'SELECT * FROM ' . INFO_TABLE . ' WHERE pmkUserID IN SELECT * FROM ' . ACCOUNTS_TABLE . ' WHERE fldUsername = ?';
+        $userRecords = $this->database->select($sql, array($this->username));
+        $this->name = $userRecords[0]['fldName'];
+        $this->email = $userRecords[0]['fldEmail'];
+        $this->phoneNumber = $userRecords[0]['fldPhoneNumber'];
+        $this->userID = $userRecords[0]['pmkUserID'];
+        $this->permissions = $userRecords[0]['fldPermissions'];
+    }
+
     // Getters
     
     public function getUserID() {

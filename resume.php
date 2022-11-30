@@ -124,17 +124,19 @@ include 'top.php';
             <ul>
                 <li>
                     <h4>Workout Coaching Web Application *In Progress</h4>
-                    <p>This program is PHP-based and designed to work as a web app for coaches to work with clients
-                        remotely.</p>
-                    <!--
+                    <a href="https://jbourde2.w3.uvm.edu/cs148/dev-final/">Dev Site</a>
+                    <p>This application is built entirely from scratch using HTML, CSS, and PHP without any outside frameworks.
+                        The intention is to create a simpler and more effective interface for clients and coaches to interact with each other than the current industry standard (programs written in a spreadsheet or document).
+                        As of now, this is still the final project for a database design class and so I am unable to make the GitHub repo public but I will do so at a later date.
+                    </p>
+                    <p class="bold">Features:</p>
                         <ul>
-                            <li>Locally hosted server and database</li>
-                            <li>Custom login feature with permission based access to web pages</li>
-                            <li>Salted and hashed login using argon2 algorithm</li>
-                            <li>Custom library for representing and editing programs. Includes ability for
-                                custom-defined exercises.</li>
+                            <li>Integration with MySQL server</li>
+                            <li>Custom login/signup feature with argon2 password hashing</li>
+                            <li>Permission-based access to different dashboard features. (e.g. Admins can see admin dashboard features, coaches can see the coach dashboard, clients can see the client dashboard, and users can see the user dashboard)</li>
+                            <li>Capability for coaches to add clients and write training blocks/workouts</li>
+                            <li>Form validation/sanitization in every step interacting with the database</li>
                         </ul>
-                        -->
                 </li>
 
                 <li>

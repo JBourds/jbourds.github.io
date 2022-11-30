@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     $user = new User($forgotPasswordUsername, '', '', '', '');
+    
 }
 ?>
 <form id="forgot-password" method="post">
