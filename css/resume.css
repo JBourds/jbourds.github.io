@@ -27,7 +27,7 @@ p, a {
     font-size: 1.6em;
 }
 
-.classes ul {
+.classes-1, .classes-2 {
     font-size: 1.35em;
 }
 
@@ -103,7 +103,7 @@ section {
     position: relative;
 }
 
-experience {
+.experience {
     grid-area: experience;
     position: relative;
 
@@ -129,11 +129,20 @@ experience {
     grid-template-columns: 50% 50%;
     grid-template-areas:
         "section-header section-header"
-        "classes classes";
+        "classes-1 classes-2";
 }
 
-.classes { 
-    grid-area: classes;
+.classes-1, .classes-2 {
+    
+}
+
+.classes-1 { 
+    grid-area: classes-1;
+    position: relative;
+}
+
+.classes-2 { 
+    grid-area: classes-2;
     position: relative;
 }
 

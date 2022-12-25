@@ -146,6 +146,7 @@ if (DEBUG) {
 
                 if ($secondaryPhoneType != "" && $secondaryPhoneNumber == "") {
                     print '<p class="mistake">Secondary phone number cannot be empty if type is selected. If this is a mistake, just re-enter your primary phone number.</p>' . PHP_EOL;
+                    $secondaryPhoneType = '';
                     $dataIsGood = false;
                  }
 
@@ -347,12 +348,12 @@ if (DEBUG) {
 
                 <p>
                     <label class="block" for="txtInquiryDetails">Inquiry Details</label>
-                    <textarea id="txtInquiryDetails" name="txtInquiryDetails" value="<?php print $inquiryDetails; ?>" class="wide-input" required></textarea>
+                    <textarea id="txtInquiryDetails" name="txtInquiryDetails" class="wide-input" required><?php print $inquiryDetails; ?></textarea>
                 </p>
 
                 <p>
                     <label class="block" for="txtAdditionalComments">Additional Comments</label>
-                    <textarea id="txtAdditionalComments" name="txtAdditionalComments" value="<?php print $additionalComments; ?>" class="wide-input"></textarea>
+                    <textarea id="txtAdditionalComments" name="txtAdditionalComments" class="wide-input"><?php print $additionalComments; ?></textarea>
                 </p>
             </fieldset>
             <p class="center">

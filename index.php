@@ -17,16 +17,16 @@ include 'top.php';
         <h2 class="bold">What are you interested in?</h2>
         <ul class="section-list">
             <li>
-                <a href="resume.php#education">Education</a>
+                <a class="button" href="resume.php#education">Education</a>
             </li>
             <li>
-                <a href="resume.php#experience">Experience</a>
+                <a class="button" href="resume.php#experience">Experience</a>
             </li>
             <li>
-                <a href="resume.php#relevant-coursework">Relevant Coursework</a>
+                <a class="button" href="resume.php#relevant-coursework">Relevant Coursework</a>
             </li>
             <li>
-                <a href="resume.php#projects">Projects</a>
+                <a class="button" href="resume.php#projects">Projects</a>
             </li>
         </ul>
 
@@ -45,8 +45,8 @@ include 'top.php';
             My interest in computers dates back to my grandfather who was an IT person for as long as computers had problems to fix. I attribute a lot of my interest in playing computers to him.
             In addition to my interest in computers, I am also an avid gym-goer/recreational powerlifter.
         </p>
-        <a href="resume.php#projects" class="block aboutMe">Check out my Coding Projects!</a>
-        <a href="https://www.openpowerlifting.org/u/jordanbourdeau" target = "_blank" class="block aboutMe">Check out my Open Powerlifting Page!</a>
+        <a href="resume.php#projects" class="block aboutMe button">Check out my Coding Projects!</a>
+        <a href="https://www.openpowerlifting.org/u/jordanbourdeau" target = "_blank" class="block aboutMe button">Check out my Open Powerlifting Page!</a>
     </section>
 
 </main>

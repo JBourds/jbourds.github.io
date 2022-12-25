@@ -20,7 +20,7 @@ include 'top.php';
         <section>
             <h2 class="bold section-header">Objective</h2>
             <div class="line"></div>
-            <p>I am a sophomore computer and data science double major at UVM with experience in multiple object-oriented programming languages, web development languages, and IT helpdesk. My experience with end users has given me a pragmatic approach to programming which builds efficient and clean solutions.</p>
+            <p>I am a sophomore computer and data science double major at UVM with experience in multiple object-oriented programming languages, web development languages, and IT helpdesk. My goal is to work and develop knowledge in the software development industry and develop well-built, scalable software solutions.</p>
         </section>
     </section>
 
@@ -34,7 +34,7 @@ include 'top.php';
             <p class="university inline-block">University of Vermont (UVM), Burlington VT</p>
             <p class="college-graduation right">Anticipated Graduation May 2025</p>
             <p class="major">Pursuing double majors in Computer and Data Science</p>
-            <p class="high-school-honors">Honors: Dean’s List Fall 2021 – Spring 2022, Honor’s College, 3.96 GPA</p>
+            <p class="high-school-honors">Honors: Dean’s List Fall 2021 – Present, Honor’s College, 3.97 GPA</p>
         </section>
 
         <section class="high-school">
@@ -43,7 +43,6 @@ include 'top.php';
             <p class="high-school-honors">Honors: Valedictorian, Green and Gold Scholar, Presidential Education
                 Award, Pro Merito, U.S. Army Scholar/Athlete Award</p>
             <p class="high-school-gpa">4.3 GPA</p>
-            <p class="sat-score">1450 SAT Score</p>
         </section>
 
     </section>
@@ -86,7 +85,7 @@ include 'top.php';
             <div class="line"></div>
             <p><span class="bold">Soft Skills:</span> Strong learner, critical thinker/ problem solver, efficient time management, good interpersonal and communication skills, patience, work well with teams, leader.</p>
             <p><span class="bold">Programming/Scripting Languages:</span> (Proficient)- Java, C++, Python, HTML, CSS, (Familiar)- SQL, PHP, C#, R, AutoIT, and VBScript.</p>
-            <p><span class="bold">Frameworks and Tools:</span> Maven, MySQL, Spring, Git</p>
+            <p><span class="bold">Frameworks and Tools:</span> Maven, MySQL, Git</p>
         </section>
     </section>
 
@@ -96,16 +95,24 @@ include 'top.php';
             <div class="line"></div>
         </section>
 
-        <section class="classes">
+        <section class="classes-1">
             <ul>
+                <li>Advanced Programming (C++)</li>
                 <li>Algorithms and Data Structures (C++)</li>
-                <li>Intro to Data Science (R)</li>
+                <li>Algorithm Design and Analysis (C++)</li>
                 <li>Database Design for the Web (HTML, CSS, PHP, SQL)</li>
-                <li>Intermediate Programming (Java)</li>
-                <li>Accelerated Introductory Programming (Python)</li>
+                <li>Programming I and II (Python/Java)</li>
+                <li>Intro to Data Science (R)</li>
+                <li>Computer Organization</li>
+            </ul>
+        </section>
+
+        <section class="classes-2">
+            <ul>
                 <li>Intro to Web Site Development (HTML, CSS, PHP, SQL)</li>
-                <li>Applied Probability</li>
+                <li>Computability and Complexity</li>
                 <li>Discrete Math</li>
+                <li>Applied Probability</li>
                 <li>Calculus I, II, and III</li>
                 <li>Linear Algebra</li>
                 <li>Statistics for Engineering</li>
@@ -124,7 +131,7 @@ include 'top.php';
             <ul>
                 <li>
                     <h4>Workout Coaching Web Application *In Progress</h4>
-                    <a href="https://jbourde2.w3.uvm.edu/cs148/dev-final/">Dev Site</a>
+                    <a href="https://jbourde2.w3.uvm.edu/training-app/live/">Live Site</a>
                     <p>This application is built entirely from scratch using HTML, CSS, and PHP without any outside frameworks.
                         The intention is to create a simpler and more effective interface for clients and coaches to interact with each other than the current industry standard (programs written in a spreadsheet or document).
                         As of now, this is still the final project for a database design class and so I am unable to make the GitHub repo public but I will do so at a later date.
